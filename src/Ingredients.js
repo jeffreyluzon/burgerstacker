@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
-import IngredientList from './IngredientList'
 
 class Ingredients extends Component {
     render() {
         return(
-            <div>
-                <h1>Ingredients</h1>
-            </div>
+            <p  style={{backgroundColor: this.props.color}} key={this.props.key}>
+                {this.props.ingredient}
+            </p>
         )
     }
 }
